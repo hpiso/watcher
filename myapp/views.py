@@ -1,9 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import nmap
-from myapp.models import Person
+from myapp.models import Object
 
 def home(request):
-    persons = Person.objects.all()
+    # persons = Person.objects.all()
 
-    return render(request, 'myapp/index.html', {'persons' : persons})
+    return render(request, 'myapp/index.html')
