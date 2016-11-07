@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from myapp.models import Object
 import nmap
-import timezone
+from django.utils import timezone
 
 class Command(BaseCommand):
     help = 'Scanning address'
