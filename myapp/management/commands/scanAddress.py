@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from myapp.models import Object
 import nmap
-import datetime
+import timezone
 
 class Command(BaseCommand):
     help = 'Scanning address'
@@ -24,5 +24,5 @@ class Command(BaseCommand):
         print "Final List : ", macAddress
 
         for address in macAddress:
-            o = Object(mac_address=address, date_time=datetime.datetime.now())
+            o = Object(mac_address=address, date_time=timezone.now())
             o.save()
