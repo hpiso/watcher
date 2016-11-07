@@ -26,6 +26,3 @@ class Command(BaseCommand):
         for address in macAddress:
             o = Object(mac_address=address, date_time=datetime.datetime.now())
             o.save()
-        print "hugo save "
-
-        self.stdout.write(self.style.SUCCESS('OK'))

@@ -12,12 +12,11 @@
 <h1>Who is connected ?</h1>
 <div class="container">
   <div class="row">
-    <!--{% for person in persons %}-->
-        <!--<div class="col-sm-4">-->
-            <!--<p>{{ person.name }}</p>-->
-            <!--<p>{{ person.enabled }}</p>-->
-        <!--</div>-->
-    <!--{% endfor %}-->
+    {% for object in objects %}
+        <div class="col-sm-4">
+            <p>{{ object.mac_address }}</p>
+        </div>
+    {% endfor %}
   </div>
 </div>
 

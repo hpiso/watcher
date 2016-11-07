@@ -4,6 +4,6 @@ import nmap
 from myapp.models import Object
 
 def home(request):
-    # persons = Person.objects.all()
+    objects = Object.objects.all()
 
-    return render(request, 'myapp/index.html')
+    return render(request, 'myapp/index.html', {'objects' : objects})
