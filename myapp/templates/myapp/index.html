@@ -18,9 +18,6 @@
           <a class="nav-item nav-link" href="#">Profile</a>
           <a class="nav-item nav-link" href="#">Help</a>
         </nav>
-        <form class="float-xs-right">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
       </div>
     </nav>
 <div class="container">
@@ -46,7 +43,7 @@
                     <tr>
                       <td>{{ object.id }}</td>
                       <td>{{ object.mac_address }}</td>
-                      <td>time</td>
+                      <td>{{ object.date_time }}</td>
                     </tr>
                 {% endfor %}
               </tbody>
